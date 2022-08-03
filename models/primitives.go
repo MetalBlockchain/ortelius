@@ -7,15 +7,16 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/formatting"
+	"github.com/MetalBlockchain/avalanchego/utils/formatting"
+
+	"github.com/MetalBlockchain/avalanchego/ids"
+	"github.com/MetalBlockchain/avalanchego/utils/constants"
 )
 
 // Bech32HRP is the human-readable part of bech32 addresses. It needs to be
 // available to Address.MarshalJSON is there is no other way to give it this
 // data
-var Bech32HRP = constants.GetHRP(constants.EverestID)
+var Bech32HRP = constants.GetHRP(constants.TahoeID)
 
 // SetBech32HRP sets the package-wide beck32HRP to use for Address marshaling.
 func SetBech32HRP(networkID uint32) {

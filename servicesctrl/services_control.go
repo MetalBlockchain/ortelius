@@ -6,8 +6,8 @@ package servicesctrl
 import (
 	"time"
 
-	avlancheGoUtils "github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	avlancheGoUtils "github.com/MetalBlockchain/avalanchego/utils"
+	"github.com/MetalBlockchain/avalanchego/utils/logging"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/db"
 	"github.com/ava-labs/ortelius/utils"

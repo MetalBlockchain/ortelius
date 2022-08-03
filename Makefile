@@ -14,38 +14,11 @@ help:
 ##
 .PHONY: dev_env_run dev_env_rm test_env_run test_env_rm standalone_run standalone_rm standalone_build
 
-dev_env_run: ## Run backing services in dev mode
-	@docker-compose -f docker/dev_env/docker-compose.yml up --remove-orphans
-
-dev_env_start: ## Start up backing services in dev mode
-	@docker-compose -f docker/dev_env/docker-compose.yml up --remove-orphans -d
-
-dev_env_rm: ## Stop and remove all backing services in dev mode
-	@docker-compose -f docker/dev_env/docker-compose.yml down --remove-orphans --volumes
-
-test_env_run: ## Run backing services in test mode
-	@docker-compose -f docker/test_env/docker-compose.yml up --remove-orphans
-
-test_env_start: ## Start up backing services in test mode
-	@docker-compose -f docker/test_env/docker-compose.yml up --remove-orphans -d
-
-test_env_rm: ## Stop and remove all test mode services
-	@docker-compose -f docker/standalone/docker-compose.yml down --remove-orphans --volumes
-
-standalone_run: ## Run standalone mode
-	@docker-compose -f docker/standalone/docker-compose.yml up --remove-orphans
-
-standalone_start: ## Start up standalone mode
-	@docker-compose -f docker/standalone/docker-compose.yml up --remove-orphans -d
-
-standalone_rm: ## Stop and remove all standalone mode services
-	@docker-compose -f docker/standalone/docker-compose.yml down --remove-orphans --volumes
-
-standalone_build: ## Build or rebuild all standalone mode images
-	@docker-compose -f docker/standalone/docker-compose.yml build
-
 production_start: ## Start production mode
 	@docker-compose -f docker/production/docker-compose.yml up -d --remove-orphans
+
+production_run: ## Start production mode
+	@docker-compose -f docker/production/docker-compose.yml up --remove-orphans
 
 production_stop: ## Stop production mode
 	@docker-compose -f docker/production/docker-compose.yml stop
@@ -55,6 +28,21 @@ production_rm: ## Remove production mode
 
 production_logs: ## Logs for production mode
 	@docker-compose -f docker/production/docker-compose.yml logs -f
+
+testnet_start: ## Start testnet mode
+	@docker-compose -f docker/testnet/docker-compose.yml up -d --remove-orphans
+
+testnet_run: ## Start testnet mode
+	@docker-compose -f docker/testnet/docker-compose.yml up --remove-orphans
+
+testnet_stop: ## Stop testnet mode
+	@docker-compose -f docker/testnet/docker-compose.yml stop
+
+testnet_rm: ## Remove testnet mode
+	@docker-compose -f docker/testnet/docker-compose.yml down
+
+testnet_logs: ## Logs for testnet mode
+	@docker-compose -f docker/testnet/docker-compose.yml logs -f
 
 ##
 ## Testing

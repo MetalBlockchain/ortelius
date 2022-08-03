@@ -4,17 +4,21 @@
   "metricsListenAddr": "",
   "listenAddr": ":8080",
   "features": [
+    "aggregate_cache",
+    "cchain_index",
+    "accumulate_balance_indexer",
+    "accumulate_balance_reader"
   ],
   "avalanchego": "http://avalanche:9650",
   "nodeInstance": "default",
-  "cchainId": "2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5",
+  "cchainId": "28fJD1hMz2PSRJKJt7YT41urTPR37rUNUcdeJ8daoiwP6DGnAR",
   "chains": {
     "11111111111111111111111111111111LpoYY": {
       "id": "11111111111111111111111111111111LpoYY",
       "vmType": "pvm"
     },
-    "2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM": {
-      "id": "2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM",
+    "35N6YCBV33rHJWAtMELT4EZkFfzU7eusLUnhWcDXjHoxh1AiN": {
+      "id": "35N6YCBV33rHJWAtMELT4EZkFfzU7eusLUnhWcDXjHoxh1AiN",
       "vmType": "avm"
     }
   },

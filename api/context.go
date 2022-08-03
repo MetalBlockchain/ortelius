@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/MetalBlockchain/avalanchego/ids"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/services/indexes/avax"
 	"github.com/ava-labs/ortelius/services/indexes/params"
@@ -118,10 +118,12 @@ func (*Context) notFoundHandler(w web.ResponseWriter, r *web.Request) {
 }
 
 func (c *Context) cacheKeyForID(name string, id string) []string {
+	c.sc.Log.Warn("cache key %v", name)
 	return []string{"avax", name, params.CacheKey("id", id)}
 }
 
 func (c *Context) cacheKeyForParams(name string, p params.Param) []string {
+	c.sc.Log.Warn("cache key %v", name)
 	return append([]string{"avax", name}, p.CacheKey()...)
 }
 

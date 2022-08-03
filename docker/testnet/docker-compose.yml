@@ -34,7 +34,7 @@ services:
     image: "metalblockchain/avalanchego:v1.7.10"
     command: /bin/sh -cx "exec /avalanchego/build/metalgo
       --config-file=/opt/config.json
-      --network-id=1
+      --network-id=5
       "
     ports:
       - "9650:9650"
@@ -56,7 +56,7 @@ services:
       - migrate
     volumes:
       - avalanche-ipcs:/tmp
-      - ./../config-mainnet.json:/opt/config.json
+      - ./../config-testnet.json:/opt/config.json
     restart: on-failure
   api:
     <<: *ortelius-app
