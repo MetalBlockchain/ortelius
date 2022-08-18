@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/MetalBlockchain/avalanchego/ids"
+	"github.com/MetalBlockchain/metalgo/ids"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/db"
 	"github.com/ava-labs/ortelius/models"

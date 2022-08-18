@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/MetalBlockchain/avalanchego/utils/hashing"
+	"github.com/MetalBlockchain/metalgo/utils/hashing"
 	"github.com/MetalBlockchain/coreth/core/types"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/db"

@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/MetalBlockchain/avalanchego/utils/logging"
+	"github.com/MetalBlockchain/metalgo/utils/logging"
 	"github.com/ava-labs/ortelius/api"
 	"github.com/ava-labs/ortelius/balance"
 	"github.com/ava-labs/ortelius/cfg"

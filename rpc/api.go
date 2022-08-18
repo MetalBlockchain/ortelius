@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/MetalBlockchain/avalanchego/utils/logging"
+	"github.com/MetalBlockchain/metalgo/utils/logging"
 )
 
 type SuccessResponse struct {

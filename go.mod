@@ -3,8 +3,8 @@ module github.com/ava-labs/ortelius
 go 1.17
 
 require (
-	github.com/MetalBlockchain/avalanchego v1.7.10-rc.4
-	github.com/MetalBlockchain/coreth v0.8.9-rc.3
+	github.com/MetalBlockchain/metalgo v1.7.10-rc.8
+	github.com/MetalBlockchain/coreth v0.8.9-rc.4
 	github.com/ethereum/go-ethereum v1.10.20
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/gocraft/dbr/v2 v2.7.2

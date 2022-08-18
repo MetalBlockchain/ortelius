@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/MetalBlockchain/avalanchego/utils/wrappers"
+	"github.com/MetalBlockchain/metalgo/utils/wrappers"
 	"github.com/ava-labs/ortelius/cfg"
 )
 

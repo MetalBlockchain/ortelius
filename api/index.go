@@ -6,7 +6,7 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/MetalBlockchain/avalanchego/ids"
+	"github.com/MetalBlockchain/metalgo/ids"
 	"github.com/ava-labs/ortelius/models"
 )
 

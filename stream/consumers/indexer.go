@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	avlancheGoUtils "github.com/MetalBlockchain/avalanchego/utils"
+	avlancheGoUtils "github.com/MetalBlockchain/metalgo/utils"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/db"
 	"github.com/ava-labs/ortelius/services"

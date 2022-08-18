@@ -4,8 +4,8 @@
 package avm
 
 import (
-	"github.com/MetalBlockchain/avalanchego/codec"
-	"github.com/MetalBlockchain/avalanchego/vms/avm"
+	"github.com/MetalBlockchain/metalgo/codec"
+	"github.com/MetalBlockchain/metalgo/vms/avm"
 )
 
 func parseTx(c codec.Manager, bytes []byte) (*avm.Tx, error) {

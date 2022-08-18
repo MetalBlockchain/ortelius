@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/MetalBlockchain/avalanchego/ids"
-	"github.com/MetalBlockchain/avalanchego/utils/formatting"
+	"github.com/MetalBlockchain/metalgo/ids"
+	"github.com/MetalBlockchain/metalgo/utils/formatting"
 )
 
 func GetQueryInt(q url.Values, key string, defaultVal int) (val int, err error) {

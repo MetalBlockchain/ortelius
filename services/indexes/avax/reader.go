@@ -16,8 +16,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/MetalBlockchain/avalanchego/ids"
-	"github.com/MetalBlockchain/avalanchego/utils/hashing"
+	"github.com/MetalBlockchain/metalgo/ids"
+	"github.com/MetalBlockchain/metalgo/utils/hashing"
 	corethType "github.com/MetalBlockchain/coreth/core/types"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/db"

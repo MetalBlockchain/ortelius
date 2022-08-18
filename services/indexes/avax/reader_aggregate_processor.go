@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/MetalBlockchain/avalanchego/ids"
+	"github.com/MetalBlockchain/metalgo/ids"
 	"github.com/ava-labs/ortelius/db"
 	"github.com/ava-labs/ortelius/models"
 	"github.com/ava-labs/ortelius/services/indexes/params"

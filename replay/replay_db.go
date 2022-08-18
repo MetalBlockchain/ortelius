@@ -13,8 +13,8 @@ import (
 
 	"github.com/ava-labs/ortelius/db"
 
-	"github.com/MetalBlockchain/avalanchego/ids"
-	avlancheGoUtils "github.com/MetalBlockchain/avalanchego/utils"
+	"github.com/MetalBlockchain/metalgo/ids"
+	avlancheGoUtils "github.com/MetalBlockchain/metalgo/utils"
 	"github.com/MetalBlockchain/coreth/core/types"
 	"github.com/ava-labs/ortelius/cfg"
 	"github.com/ava-labs/ortelius/modelsc"

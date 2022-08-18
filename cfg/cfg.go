@@ -7,8 +7,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/MetalBlockchain/avalanchego/utils/logging"
-	"github.com/MetalBlockchain/avalanchego/version"
+	"github.com/MetalBlockchain/metalgo/utils/logging"
+	"github.com/MetalBlockchain/metalgo/version"
 )
 
 const appName = "ortelius"
