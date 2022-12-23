@@ -7,12 +7,12 @@ import (
 	"github.com/MetalBlockchain/metalgo/genesis"
 	"github.com/MetalBlockchain/metalgo/ids"
 	"github.com/MetalBlockchain/metalgo/utils/constants"
-	"github.com/MetalBlockchain/metalgo/vms/platformvm"
+	"github.com/MetalBlockchain/metalgo/vms/platformvm/txs"
 )
 
 type GenesisContainer struct {
 	NetworkID       uint32
-	XChainGenesisTx *platformvm.Tx
+	XChainGenesisTx *txs.Tx
 	XChainID        ids.ID
 	AvaxAssetID     ids.ID
 	GenesisBytes    []byte

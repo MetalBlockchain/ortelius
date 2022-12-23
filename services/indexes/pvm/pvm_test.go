@@ -7,15 +7,16 @@ import (
 
 	"github.com/MetalBlockchain/metalgo/ids"
 	"github.com/MetalBlockchain/metalgo/utils/logging"
-	"github.com/MetalBlockchain/metalgo/vms/platformvm"
-	"github.com/ava-labs/ortelius/cfg"
-	"github.com/ava-labs/ortelius/db"
-	"github.com/ava-labs/ortelius/models"
-	"github.com/ava-labs/ortelius/services"
-	"github.com/ava-labs/ortelius/services/indexes/avax"
-	"github.com/ava-labs/ortelius/services/indexes/params"
-	"github.com/ava-labs/ortelius/servicesctrl"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/metalgo/vms/platformvm/blocks"
+	"github.com/MetalBlockchain/metalgo/vms/platformvm/txs"
+	"github.com/MetalBlockchain/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/db"
+	"github.com/MetalBlockchain/ortelius/models"
+	"github.com/MetalBlockchain/ortelius/services"
+	"github.com/MetalBlockchain/ortelius/services/indexes/avax"
+	"github.com/MetalBlockchain/ortelius/services/indexes/params"
+	"github.com/MetalBlockchain/ortelius/servicesctrl"
+	"github.com/MetalBlockchain/ortelius/utils"
 )
 
 var (
@@ -48,7 +49,10 @@ func TestBootstrap(t *testing.T) {
 }
 
 func newTestIndex(t *testing.T, networkID uint32, chainID ids.ID) (*utils.Connections, *Writer, *avax.Reader, func()) {
-	logConf := logging.DefaultConfig
+	logConf := logging.Config{
+		DisplayLevel: logging.Info,
+		LogLevel:     logging.Debug,
+	}
 
 	conf := cfg.Services{
 		Logging: logConf,
@@ -82,9 +86,9 @@ func TestInsertTxInternal(t *testing.T) {
 	defer closeFn()
 	ctx := context.Background()
 
-	tx := platformvm.Tx{}
-	validatorTx := &platformvm.UnsignedAddValidatorTx{}
-	tx.UnsignedTx = validatorTx
+	tx := txs.Tx{}
+	validatorTx := &txs.AddValidatorTx{}
+	tx.Unsigned = validatorTx
 
 	persist := db.NewPersistMock()
 	session, _ := conns.DB().NewSession("test_tx", cfg.RequestTimeout)
@@ -109,9 +113,9 @@ func TestInsertTxInternalRewards(t *testing.T) {
 	defer closeFn()
 	ctx := context.Background()
 
-	tx := platformvm.Tx{}
-	validatorTx := &platformvm.UnsignedRewardValidatorTx{}
-	tx.UnsignedTx = validatorTx
+	tx := txs.Tx{}
+	validatorTx := &txs.RewardValidatorTx{}
+	tx.Unsigned = validatorTx
 
 	persist := db.NewPersistMock()
 	session, _ := conns.DB().NewSession("test_tx", cfg.RequestTimeout)
@@ -139,7 +143,7 @@ func TestCommonBlock(t *testing.T) {
 	defer closeFn()
 	ctx := context.Background()
 
-	tx := platformvm.CommonBlock{}
+	tx := blocks.CommonBlock{}
 	blkid := ids.ID{}
 
 	persist := db.NewPersistMock()
