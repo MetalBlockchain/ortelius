@@ -8,10 +8,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ava-labs/ortelius/cfg"
-	"github.com/ava-labs/ortelius/db"
-	"github.com/ava-labs/ortelius/servicesctrl"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/db"
+	"github.com/MetalBlockchain/ortelius/servicesctrl"
+	"github.com/MetalBlockchain/ortelius/utils"
 )
 
 var (

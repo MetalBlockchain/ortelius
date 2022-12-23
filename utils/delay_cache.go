@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/ava-labs/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/cfg"
 )
 
 const (

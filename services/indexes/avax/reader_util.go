@@ -3,7 +3,7 @@ package avax
 import (
 	"math/big"
 
-	"github.com/ava-labs/ortelius/models"
+	"github.com/MetalBlockchain/ortelius/models"
 )
 
 func addAssetInfoMap(assets map[models.StringID]models.AssetInfo, assets2 map[models.StringID]models.AssetInfo) map[models.StringID]models.AssetInfo {

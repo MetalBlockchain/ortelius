@@ -9,23 +9,23 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ava-labs/ortelius/servicesctrl"
+	"github.com/MetalBlockchain/ortelius/servicesctrl"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/ortelius/db"
+	"github.com/MetalBlockchain/ortelius/db"
 
 	"github.com/MetalBlockchain/metalgo/ids"
 	avlancheGoUtils "github.com/MetalBlockchain/metalgo/utils"
 	"github.com/MetalBlockchain/coreth/core/types"
-	"github.com/ava-labs/ortelius/cfg"
-	"github.com/ava-labs/ortelius/modelsc"
-	"github.com/ava-labs/ortelius/services"
-	"github.com/ava-labs/ortelius/services/indexes/avm"
-	"github.com/ava-labs/ortelius/services/indexes/cvm"
-	"github.com/ava-labs/ortelius/services/indexes/pvm"
-	"github.com/ava-labs/ortelius/stream"
-	"github.com/ava-labs/ortelius/stream/consumers"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/modelsc"
+	"github.com/MetalBlockchain/ortelius/services"
+	"github.com/MetalBlockchain/ortelius/services/indexes/avm"
+	"github.com/MetalBlockchain/ortelius/services/indexes/cvm"
+	"github.com/MetalBlockchain/ortelius/services/indexes/pvm"
+	"github.com/MetalBlockchain/ortelius/stream"
+	"github.com/MetalBlockchain/ortelius/stream/consumers"
+	"github.com/MetalBlockchain/ortelius/utils"
 )
 
 type Replay interface {

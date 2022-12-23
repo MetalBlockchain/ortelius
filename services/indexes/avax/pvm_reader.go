@@ -7,9 +7,9 @@ import (
 	"context"
 
 	"github.com/MetalBlockchain/metalgo/ids"
-	"github.com/ava-labs/ortelius/cfg"
-	"github.com/ava-labs/ortelius/models"
-	"github.com/ava-labs/ortelius/services/indexes/params"
+	"github.com/MetalBlockchain/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/models"
+	"github.com/MetalBlockchain/ortelius/services/indexes/params"
 )
 
 func (r *Reader) ListBlocks(ctx context.Context, params *params.ListBlocksParams) (*models.BlockList, error) {

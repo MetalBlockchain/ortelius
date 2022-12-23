@@ -10,8 +10,8 @@ import (
 
 	"github.com/MetalBlockchain/metalgo/ids"
 	"github.com/MetalBlockchain/metalgo/utils/hashing"
-	"github.com/ava-labs/ortelius/models"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/ortelius/models"
+	"github.com/MetalBlockchain/ortelius/utils"
 	"github.com/gocraft/dbr/v2"
 )
 

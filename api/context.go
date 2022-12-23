@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/MetalBlockchain/metalgo/ids"
-	"github.com/ava-labs/ortelius/cfg"
-	"github.com/ava-labs/ortelius/services/indexes/avax"
-	"github.com/ava-labs/ortelius/services/indexes/params"
-	"github.com/ava-labs/ortelius/servicesctrl"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/services/indexes/avax"
+	"github.com/MetalBlockchain/ortelius/services/indexes/params"
+	"github.com/MetalBlockchain/ortelius/servicesctrl"
+	"github.com/MetalBlockchain/ortelius/utils"
 	"github.com/gocraft/web"
 	"go.uber.org/zap"
 )

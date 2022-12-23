@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/MetalBlockchain/metalgo/ids"
-	"github.com/ava-labs/ortelius/db"
-	"github.com/ava-labs/ortelius/models"
+	"github.com/MetalBlockchain/ortelius/db"
+	"github.com/MetalBlockchain/ortelius/models"
 	"github.com/gocraft/dbr/v2"
 )
 

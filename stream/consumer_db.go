@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/ortelius/cfg"
-	"github.com/ava-labs/ortelius/db"
-	"github.com/ava-labs/ortelius/services"
-	"github.com/ava-labs/ortelius/servicesctrl"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/db"
+	"github.com/MetalBlockchain/ortelius/services"
+	"github.com/MetalBlockchain/ortelius/servicesctrl"
+	"github.com/MetalBlockchain/ortelius/utils"
 	"go.uber.org/zap"
 )
 

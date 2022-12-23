@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/MetalBlockchain/metalgo/utils/wrappers"
-	"github.com/ava-labs/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/cfg"
 )
 
 type Connections struct {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ava-labs/ortelius/cfg"
+	"github.com/MetalBlockchain/ortelius/cfg"
 )
 
 func TestParse(t *testing.T) {

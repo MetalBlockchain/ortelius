@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/ortelius/services"
+	"github.com/MetalBlockchain/ortelius/services"
 )
 
 var (

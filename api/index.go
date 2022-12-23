@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 
 	"github.com/MetalBlockchain/metalgo/ids"
-	"github.com/ava-labs/ortelius/models"
+	"github.com/MetalBlockchain/ortelius/models"
 )
 
 const (

@@ -9,9 +9,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ava-labs/ortelius/db"
-	"github.com/ava-labs/ortelius/servicesctrl"
-	"github.com/ava-labs/ortelius/utils"
+	"github.com/MetalBlockchain/ortelius/db"
+	"github.com/MetalBlockchain/ortelius/servicesctrl"
+	"github.com/MetalBlockchain/ortelius/utils"
 	"github.com/gocraft/dbr/v2"
 	"go.uber.org/zap"
 )
